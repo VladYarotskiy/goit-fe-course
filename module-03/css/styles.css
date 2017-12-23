@@ -17,24 +17,20 @@ body {
     width: 480px;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-right: auto;
     margin-left: auto;
     background-image: url(../img/wrapper.png);
 
 }
-.block{
-    margin-left: 40px;
-    margin-right: 40px;
+.block{    
     margin-bottom: 40px;
 }
 .second-block{
-    margin-left: 40px;
-    margin-right: 100px;
     margin-bottom: 40px; 
 }
 .third-block {
-    margin-left: 40px;
-    margin-right: 40px;
     padding-top: 40px;
     border-top-width: 2px;
     border-top-style: solid;
@@ -57,6 +53,7 @@ body {
 .paragraph{
     margin-bottom: 20px;
 }
+
 ul {
     list-style-type: none;
     columns: 2;
