@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-image: url(../img/background.png)
+}
+.wrapper {
+    padding: 30px 30px 30px 30px;
+}
+/* MENU */
+.menu {
+    text-align: center;
+    margin-bottom: 70px; 
+}
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+/* IMAGES*/
+.avatar {
+    display: inline-block;
+    width: 20%;
+    
+    vertical-align: middle;
+    
+}
+.avatar img {
+    display: block;
+    width: 100%;
+}
+.master {
+    display: inline-block;
+    width: 60%;
+}
