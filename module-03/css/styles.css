@@ -12,6 +12,7 @@ body {
     background-position: center;
     padding-top: 50px;
     padding-bottom: 50px; 
+    bgi
 }
 .wrapper {
     width: 480px;
@@ -52,6 +53,7 @@ body {
 }
 .paragraph{
     margin-bottom: 20px;
+    
 }
 
 ul {
@@ -64,3 +66,4 @@ li {
     display: inline-block;
     margin-bottom: 10px;
 }
+

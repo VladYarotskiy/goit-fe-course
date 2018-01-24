@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: 300;
+    line-height: 1.0;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    background-image: url(../img/background.jpg);
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    counter-reset: couner;
+}
+.wrapper {
+    width: 1000px;
+    padding-top: 115px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../img/wrapper.jpg);
+    height: auto;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    margin-right:25px; 
+}
+.title {
+    margin-bottom: 50px;
+    color: #263555;
+}
+.profile {
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
+    margin-right: 3%;
+}
+.profile p:last-child {
+    margin-bottom: 0px;
+}
+.principles {
+    display: inline-block;
+    width: 28%;
+    padding-right: 70px;
+    padding-left: 20px;
+}
+.principles p {
+    margin-bottom: 20px;
+}
+.principles p:last-child {
+    margin-bottom: 0px;
+}
+.anotation {
+    margin-bottom: 20px;
+    color: #263555;
+    font-weight: bold;
+}
+
+
+ul {
+    list-style-type: none;
+}
+.li {
+    margin-bottom: 35px;
+    counter-increment: counter;
+}
+.li:last-child {
+    margin-bottom: 0px;
+}
+.li::before {
+    content: counter(counter);
+    margin: 10px;
+    color: #ffffff;
+    border: 1px solid #38AFE5;
+    padding: 5px 10px 5px 10px;
+    background-color: #38AFE5;
+    border-radius: 50%;
+}
+.li p {
+    margin-top: 20px;
+    padding-left: 38px;
+}
+
