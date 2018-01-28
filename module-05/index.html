@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="wrapper">
+        <header>
+                <nav class="navigation">
+                        <ul class="menu">
+                                <li class="menu__item"><a href="#">HOME</a></li>
+                                <li class="menu__item"><a href="#">ABOUT</a>
+                                  <ul class="submenu">
+                                    <li class="submenu__item">
+                                      <a class="submenu_a" href="#">AGENCY</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="submenu_a" href="#">NEWS</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="submenu_a" href="#">TEAM</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="menu__item">
+                                  <a href="#">GALLERY</a>
+                                    
+                                  </li>
+                                <li class="menu__item">
+                                  <a href="#">TOURS</a>
+                                    
+                                  </li>
+                                <li class="menu__item">
+                                  <a href="#">BLOG</a>
+                                    
+                                  </li>
+                                <li class="menu__item">
+                                  <a href="#">CONTACTS</a>
+                                    
+                                  </li>
+                              </ul>
+                </nav>
+                <div class="logo">
+                    <span>JOURNEY</span>
+                </div>
+        </header>
+        <div class="slider">
+            <div>
+                <img src="img/slider01.jpg" alt="Maldiv">
+            </div>
+            <div>
+                <img src="img/slider02.jpg" alt="Rome">
+            </div>
+            <div>
+                <img src="img/slider03.jpg" alt="Spain">
+            </div>
+            <div>
+                <img src="img/slider04.jpg" alt="Venice">
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<button class="slick-prev"></button>',
+        nextArrow: '<button class="slick-next"></button>',
+      });
+    });
+  </script>
+</body>
+</html>
