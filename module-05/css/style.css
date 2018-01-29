@@ -1,10 +1,14 @@
 :root {
     --main-title-color: #263555;
+    --main-bg-color: #38AFE5;
 }
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Pathway Gothic One';
+    font-size: 30px;
+    font-weight: 400;
 }
 body {
     background-image: url(../img/background.jpg);
@@ -12,15 +16,14 @@ body {
     background-size: cover;
     min-height: 100vh;
     background-position: center;
+    
 }
 .wrapper {
     padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 70px;
 }
-.header {
-    position: relative;
-    padding-top: 53px;
-}
-/*NAVIGATION*/
 .menu {
     text-align: center;  
 }
@@ -38,10 +41,9 @@ body {
 }
 a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;    
+    color: #ffffff; 
 }
-a:hover {
+.menu__item a:hover {
     color: var(--main-title-color);    
 }
 .submenu { 
@@ -55,6 +57,21 @@ a:hover {
     padding-left: 0px;
     border: 1px solid #ffffff;
     border-radius: 5px;
+    position: reletive;
+    font-size: 30px;
+    
+}
+.submenu::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    top: -6px;
+    left: 43%;
 }
 .menu__item:hover > .submenu { 
     display: block; 
@@ -62,25 +79,172 @@ a:hover {
   
 .submenu_a {
     color: #000000;
-    font-size: 12px;
+    font-size: 21px;
+    padding: 5px;
 }
 .navigation {
-
+    position: relative;  
+    margin-bottom: 100px;   
 }
 
 /*LOGO*/
 .logo {
-    display: flex;
-    width: 140px;
-    height: 140px;
+    display: inline-block;
     border: 1px solid #ffffff;
+    padding: 40px 27.5px;
     border-radius: 50%;
-    position: absolute;
-    left: 600px;
-    top: 40px;
+    text-decoration: none;
+    color: var(--main-title-color);
     background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dorsa';
+    font-size: 70px;
+    font-weight: 100;
 }
-span {
-    vertical-align: middle;
-    margin: auto;
+/*SLIDER*/
+.slick-arrow {
+    border: 0;
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    z-index: 10;
+    background-color: #008080;
+    color: #ffffff;
+    cursor: pointer;
+}
+  
+  .slick-arrow:hover {
+    background-color: rgba(56, 175, 229, 0.5);
+}
+  
+  .slick-prev {
+    bottom: 10%;
+    left: 5%;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: -4px;
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    height: 120px;
+    width: 60px;
+    line-height: 120px;
+}
+  
+  .slick-next {
+    bottom: 10%;
+    left: 10.8%;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: var(--main-bg-color);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    text-align: center;
+    height: 120px;
+    width: 60px;
+    line-height: 120px;
+  }
+  .slider-image {
+    width: 100%;
+    
+  }
+  .first-slider-title {
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: #ffffff;
+    font-size: 17px;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    
+  }
+  .second-slider-title {
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: var(--main-bg-color);
+    color: #ffffff;  
+    position: absolute;
+    left: 0px;
+    top: 49%;  
+  }
+  .slider-wrap {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  /*MAIN-CONTENT*/
+  .main-content {
+    background-image: url(../img/wrapper.jpg);
+    padding: 60px; 
+    padding-bottom: 130px;   
+  }
+  /*GALLARY*/
+  .gallary-title {
+    margin-bottom: 50px;
+    color: var(--main-title-color);
+  }
+  .card-title {
+    color: #ffffff;
+  }
+  .gallary-image {
+    display: flex;
+    justify-content: space-between;
+  }
+  .venice {
+    width: 32%;
+    position: relative;
+  }
+  .venice:hover > .card-article {
+    display: block;
+  }
+  .york {
+    width: 32%;  
+    
+    position: relative; 
+  }
+  .york:hover > .card-article {
+    display: block;
+  }
+  .paris {
+    width: 32%;
+    position: relative;
+  }
+  .paris:hover > .card-article {
+    display: block;
+  }
+  .gallary-card {
+    width: 100%;
+  }
+  .card-article {
+    width: 50%;
+    height: 98.5%;
+    display: none;
+    position: absolute;
+    background-color: #193149;
+    top: 0px;
+    left: 0px;
+    padding: 20px 8px 20px 8px;
+    text-align: center;
+}
+.card-article p {
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.card-article a {
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 12.5px;
+    color: var(--main-title-color);
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
