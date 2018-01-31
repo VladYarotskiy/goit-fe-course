@@ -1,3 +1,4 @@
+@import 'gallary.css';
 :root {
     --main-title-color: #263555;
     --main-bg-color: #38AFE5;
@@ -15,14 +16,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    background-position: center;
-    
+    background-position: center;       
 }
 .wrapper {
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 70px;
+    width: 1024px;
+    margin: auto;
+
 }
 .menu {
     text-align: center;  
@@ -84,7 +83,7 @@ a {
 }
 .navigation {
     position: relative;  
-    margin-bottom: 100px;   
+    padding: 100px 50px;   
 }
 
 /*LOGO*/
@@ -122,7 +121,7 @@ a {
   
   .slick-prev {
     bottom: 10%;
-    left: 5%;
+    left: 4.5%;
     display: inline-block;
     font-size: 30px;
     margin-right: -4px;
@@ -133,6 +132,7 @@ a {
     height: 120px;
     width: 60px;
     line-height: 120px;
+    outline: 0;
 }
   
   .slick-next {
@@ -149,11 +149,12 @@ a {
     height: 120px;
     width: 60px;
     line-height: 120px;
-  }
+    outline: 0;
+}
   .slider-image {
     width: 100%;
     
-  }
+}
   .first-slider-title {
     display: inline-block;
     padding: 20px 15px;
@@ -163,7 +164,7 @@ a {
     left: 0px;
     top: 40%;
     
-  }
+}
   .second-slider-title {
     display: inline-block;
     padding: 20px 15px;
@@ -172,57 +173,62 @@ a {
     position: absolute;
     left: 0px;
     top: 49%;  
-  }
+}
   .slider-wrap {
     position: relative;
-    margin-bottom: 50px;
-  }
+    margin-bottom: 50px;    
+}
   /*MAIN-CONTENT*/
   .main-content {
     background-image: url(../img/wrapper.jpg);
     padding: 60px; 
     padding-bottom: 130px;   
-  }
+}
   /*GALLARY*/
   .gallary-title {
     margin-bottom: 50px;
     color: var(--main-title-color);
-  }
+}
   .card-title {
     color: #ffffff;
-  }
+}
+.card-paragraph {
+    max-height: 128px;
+    overflow: hidden;
+}
   .gallary-image {
     display: flex;
     justify-content: space-between;
-  }
+}
   .venice {
     width: 32%;
     position: relative;
-  }
+}
   .venice:hover > .card-article {
     display: block;
-  }
+}
   .york {
     width: 32%;  
     
     position: relative; 
-  }
+}
   .york:hover > .card-article {
     display: block;
-  }
+}
   .paris {
     width: 32%;
     position: relative;
-  }
+}
   .paris:hover > .card-article {
     display: block;
-  }
+}
   .gallary-card {
     width: 100%;
-  }
+    display: block;
+}
   .card-article {
     width: 50%;
-    height: 98.5%;
+    height: 100%;
     display: none;
     position: absolute;
     background-color: #193149;
@@ -248,3 +254,9 @@ a {
     bottom: 5%;
     right: 5%;
 }
+
+
+
+/*GALLARY*/
+
+
