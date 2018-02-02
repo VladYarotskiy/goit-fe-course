@@ -1,0 +1,115 @@
+
+
+/*POSTS*/
+
+.blog-main-content {
+    background-color: #ffffff;
+    padding: 100px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-post-wrap {
+    flex: 0 0 75%;
+}
+.blog-post {
+    display: flex; 
+}
+.blog-post-first-section {
+    margin-bottom: 50px;
+    padding-bottom: 85px;
+    border-bottom: 1px #c1bbbb solid;
+}
+.main-title {
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--main-title-color);
+}
+.blog-prepost-titles {
+    position: relative;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.blog-prepost-titles::before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    font-size: 14.5px;
+    line-height: 15px;
+    content: '28 APR';
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+    border: 1px solid #38AFE5;
+    background-color: #38AFE5;
+    border-radius: 50%;
+    display: inline-block;
+}
+.blog-prepost-secondary-title {
+    color: #868f8f;
+    font-size: 13px;
+}
+.blog-prepost-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--main-title-color);
+}
+.blog-post-image {
+    flex-basis: 40%;
+    margin-right: 20px;
+}
+.blog-post-article {
+    flex-basis: 60%;
+    position: relative;
+}
+.blog-post-article p {
+    font-size: 15px;
+}
+.blog-post-article-anotation {
+    margin-bottom: 15px;
+}
+.blog-post-article-paragraph {
+    margin-bottom: 25px;
+}
+.blog-post-article-btn {
+    padding: 1px 10px;
+    background-color: #fbf6f9;
+    border: 2px #c1bbbb solid;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+}
+
+/*lateral navigation*/
+.blog-lateral-navigation {
+    flex-basis: 0 0 15%;
+}
+.blog-lateral-navigation ul {
+    list-style: none;
+}
+.blog-lateral-navigation li {
+    margin-bottom: 10px;
+}
+.blog-lateral-navigation li:last-child {
+    margin-bottom: 0px;
+}
+.blog-lateral-navigation a {
+    color: var(--main-title-color);
+}
+.blog-lateral-navigation li::before {
+    content: '\2192';
+    color: #38AFE5;
+    margin-right: 10px;
+}
+.first-lateral-navigation {
+    margin-bottom: 55px;
+}
+    
