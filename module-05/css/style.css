@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    background-position: center;       
+    background-position: center;     
 }
 .wrapper {
     width: 1024px;
@@ -27,12 +27,15 @@ body {
     text-align: center;  
     font-size: 30px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 .menu__item:nth-child(3) {
     margin-right: 240px;
 }
 .menu__item {
-    display: inline-block;
+   /* display: inline-block;*/
     text-decoration: none;
     margin-right: 50px;
     position: relative;    
@@ -183,8 +186,7 @@ a {
   /*MAIN-CONTENT*/
   .main-content {
     background-image: url(../img/wrapper.jpg);
-    padding: 60px; 
-    padding-bottom: 130px;   
+    padding: 100px 60px 130px 60px;  
 }
   /*GALLARY*/
   .gallary-title {
