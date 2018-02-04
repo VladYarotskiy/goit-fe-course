@@ -188,6 +188,7 @@
     flex-direction: column;    
     padding-top: 25px;
     padding-bottom: 50px;
+    text-align: center;
 }
 .blog-social-links {
     display: flex;
@@ -229,8 +230,4 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.blog-footer {
-    display: block;
-    text-align: center;
 }
