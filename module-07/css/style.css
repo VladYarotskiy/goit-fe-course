@@ -1,0 +1,160 @@
+@import url(fonts.css);
+:root{
+    --main-a-color: #fed136;
+}
+.main-content {
+    background-color: #ffffff;
+    width: 62.5rem;
+    margin: auto;
+}
+.home-header-wrap {
+    margin-bottom: 7.8125rem;
+}
+.home-header {
+
+    padding-top: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--main-a-color);
+    font-family: 'lobster', serif;
+    font-size: 1.6875rem;
+}
+.menu {
+    display: flex;
+    width: 30rem;
+    justify-content: space-between;
+
+}
+.menu a {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.menu a:hover {
+    color: var(--main-a-color);
+}
+
+/*Services*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    margin-bottom: 4.6875rem; 
+}
+.services h2 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    margin-bottom: 1.5625rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.services p {
+    font-size: 0.875rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+/*OFFERS*/
+.our-offers {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7.5rem;
+}
+.our-offer {
+    text-align: center;
+    flex: 0 0 30%;
+
+
+}
+.our-offer img {
+    border: 0.1875rem solid #FFDB42;
+    border-radius: 50%;
+    padding: 0.625rem;
+    width: 3.125rem;
+    margin-bottom: 1.5625rem;
+}
+.our-offer h3 {
+    margin-bottom: 1.5625rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.our-offer p {
+    font-size: 0.875rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+/*CONTACT*/
+.contants-wrap {
+    background-image: url(../img/contact-form-bg.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact-header {
+    margin-bottom: 4.6875rem;
+    padding-top: 6.25rem;
+}
+.contact-header h2 {
+    margin-bottom: 1.5625rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact-header p {
+    color: #656565;
+    font-size: 0.875rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+.contacts {
+    width: 62.5rem;
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;  
+}
+.user-data {
+    flex: 0 0 45%;
+}
+.text-area {
+    flex: 0 0 45%;
+}
+.text-area textarea{
+    border: 0.125rem solid #ffffff;
+    border-radius: 0.2rem;
+    padding: 0.625rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.form:not(:first-child) {
+    margin-top: 1.7525rem;
+}
+.form input {
+    width: 28.4375rem;
+    padding: 0.625rem;
+    border: 0.125rem solid #ffffff;
+    border-radius: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-btn {
+    padding: 15px 50px;
+    background-color: var(--main-a-color);
+    border: 0.125rem solid var(--main-a-color);
+    border-radius: 0.2rem;
+    color: #ffffff;
+    font-size: 17px;
+    flex: 0 0 25%;
+    margin-top: 1.5625rem;
+    font-family: 'Montserrat', sans-serif;
+}
